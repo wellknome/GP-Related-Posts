@@ -10,9 +10,9 @@ function gp_related_posts_output() {
         ?>
         <div class="inside-article related-posts">
         <?php
-
-        $orig_post = $post;
         global $post;
+        $orig_post = $post;
+
         $tags = wp_get_post_tags($post->ID);
 
         if ($tags) {
